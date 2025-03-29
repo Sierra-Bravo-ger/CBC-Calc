@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
 void main() {
   runApp(const CBCCalcApp());
 }
@@ -11,7 +9,7 @@ class CBCCalcApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CBC Calc',
+      title: 'CBC-Calc',
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colors.red,
@@ -108,7 +106,7 @@ Widget _buildInfoBox() {
         children: [
           const SizedBox(height: 24),
           const Text(
-            'Ursachen:',
+            'mögliche Ursachen:📰',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
@@ -121,7 +119,7 @@ Widget _buildInfoBox() {
               color: Colors.grey.shade100,
             ),
             child: RichText(
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.start,
               text: const TextSpan(
                 style: TextStyle(fontSize: 13, color: Colors.black, height: 2),
                 children: [
@@ -146,7 +144,7 @@ Widget _buildInfoBox() {
           ),
           const SizedBox(height: 24),
           const Text(
-            'Strategien zur Identifikation der Ursache:',
+            'Strategien zur Identifikation der Ursache:🔍',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
@@ -159,7 +157,7 @@ Widget _buildInfoBox() {
               color: Colors.grey.shade100,
             ),
             child: RichText(
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.start,
               text: const TextSpan(
                 style: TextStyle(fontSize: 13, color: Colors.black, height: 2),
                 children: [
@@ -178,6 +176,8 @@ Widget _buildInfoBox() {
                   TextSpan(text: '   Zusätzlich '),
                   TextSpan(text: 'HB-O', style: TextStyle(fontWeight: FontWeight.bold)),
                   TextSpan(text: ' verwenden \n'),
+                  TextSpan(text: '• Vorverdünnung der Probe 1:7', style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(text: ' führt ebenfalls zu Reduktion der HIL-Interferenzen\n'),
                   TextSpan(text: '• Hämolyse-Diagnostik ergänzen\n'),
                   TextSpan(text: '    → z. B. LDH, Haptoglobin, FRC% aus dem RET-Kanal\n'),
                   TextSpan(text: '     Zusätzlich '),
@@ -200,7 +200,18 @@ Widget _buildInfoBox() {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('CBC Calc')),
+      appBar: AppBar(
+        title: Row(
+          children: [
+            Image.asset(
+              'assets/icon.png',
+              height: 28,
+            ),
+            const SizedBox(width: 8),
+            const Text('CBC-Calc'),
+          ],
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -216,7 +227,7 @@ Widget _buildInfoBox() {
                         controller: _rbcController,
                         keyboardType: const TextInputType.numberWithOptions(decimal: true),
                         decoration: const InputDecoration(
-                          labelText: 'RBC (Mio/µl)',
+                          labelText: '🩸 RBC (Mio/µl)',
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -225,7 +236,7 @@ Widget _buildInfoBox() {
                         controller: _hbController,
                         keyboardType: const TextInputType.numberWithOptions(decimal: true),
                         decoration: const InputDecoration(
-                          labelText: 'HB (g/dl)',
+                          labelText: '💉 HB (g/dl)',
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -234,7 +245,7 @@ Widget _buildInfoBox() {
                         controller: _hktController,
                         keyboardType: const TextInputType.numberWithOptions(decimal: true),
                         decoration: const InputDecoration(
-                          labelText: 'HKT (%)',
+                          labelText: '🧪 HKT (%)',
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -257,7 +268,7 @@ Widget _buildInfoBox() {
                           text: mcv != null ? mcv!.toStringAsFixed(2) : '',
                         ),
                         decoration: const InputDecoration(
-                          labelText: 'MCV (fl)',
+                          labelText: '↔ MCV (fl)',
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -268,7 +279,7 @@ Widget _buildInfoBox() {
                           text: mch != null ? mch!.toStringAsFixed(2) : '',
                         ),
                         decoration: const InputDecoration(
-                          labelText: 'MCH (pg)',
+                          labelText: '⚖ MCH (pg)',
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -276,10 +287,12 @@ Widget _buildInfoBox() {
                       TextField(
                         readOnly: true,
                         controller: TextEditingController(
-                          text: mchc != null ? mchc!.toStringAsFixed(2) : '',
+                          text: mchc != null
+                                ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(2)}' : mchc!.toStringAsFixed(2))
+                                : '',
                         ),
                         decoration: InputDecoration(
-                          labelText: 'MCHC (g/dl)',
+                          labelText: '📊 MCHC (g/dl)',
                           border: const OutlineInputBorder(),
                           fillColor: _getHighlightColor(),
                           filled: _getHighlightColor() != null,
@@ -299,13 +312,13 @@ Widget _buildInfoBox() {
                 ElevatedButton(
                   onPressed: _calculate,
                   style: ElevatedButton.styleFrom(minimumSize: const Size(140, 48)),
-                  child: const Text('Berechnen'),
+                  child: const Text('🧮 Berechnen'),
                 ),
                 const SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: _reset,
                   style: ElevatedButton.styleFrom(minimumSize: const Size(140, 48)),
-                  child: const Text('Zurücksetzen'),
+                  child: const Text('🔄 Zurücksetzen'),
                 ),
               ],
             ),
