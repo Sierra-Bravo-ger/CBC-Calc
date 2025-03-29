@@ -121,6 +121,7 @@ Widget _buildInfoBox() {
               color: Colors.grey.shade100,
             ),
             child: RichText(
+              textAlign: TextAlign.center,
               text: const TextSpan(
                 style: TextStyle(fontSize: 13, color: Colors.black, height: 2),
                 children: [
@@ -132,7 +133,7 @@ Widget _buildInfoBox() {
                   TextSpan(text: '   Farbumschlag der Probe → photometrische Interferenz\n'),
                   TextSpan(text: '• Dehydratation (selten, führt eher zu relativer Erhöhung)\n'),
                   TextSpan(text: '• Technische Fehler oder Probenfehler (z. B. Hämolyse in vitro, falsche Probevolumen)\n'),
-                  TextSpan(text: '• RBC verändert aufgrund besonderer Bedingungen (z.B. osmotische) in der Probe durch: Alkohole (Vorlauf-Intoxikation), Hyponatriämie, Glucosämie, Chemo-Therapie, großflächige Verbrennungen\n'),
+                  TextSpan(text: '• RBC verändert aufgrund besonderer Bedingungen (z.B. osmotische) in der Probe durch: Hyponatriämie, Glucosämie, Chemo-Therapie, Alkohole, großflächige Verbrennungen\n'),
                   TextSpan(text: '• '),
                   TextSpan(text: 'Sphärozytose (hereditär)', style: TextStyle(fontWeight: FontWeight.bold)),
                   TextSpan(text: ' ← Erhöhter MCHC Wert ist tatsächlich korrekt, Bestätigung per Ausstrich\n'),
@@ -158,8 +159,9 @@ Widget _buildInfoBox() {
               color: Colors.grey.shade100,
             ),
             child: RichText(
+              textAlign: TextAlign.center,
               text: const TextSpan(
-                style: TextStyle(fontSize: 13, color: Colors.black, height: 1.5),
+                style: TextStyle(fontSize: 13, color: Colors.black, height: 2),
                 children: [
                   TextSpan(text: '• Kälteagglutinine ausschließen\n'),
                   TextSpan(text: '    → Probe bis zu 1h bei 37°C erwärmen und warm messen\n'),
