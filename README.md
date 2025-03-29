@@ -1,6 +1,6 @@
 # CBC-Calc
 
-Simple "Calculator App" for use in a clinical Hematology Lab to quickly Re-Calculate MCHC and other Erythrocyte-Indices in Samples where MCHC > 36,5
+Simple "Calculator App" for use in a clinical Hematology Lab to quickly Re-Calculate MCHC and other Erythrocyte-Indices in Samples where MCHC > 36,5g/dl
 
 Should be Self-Explanatory. Enter Values on left side. Get calculated Erythrocyte-Indices on the right side.
 
