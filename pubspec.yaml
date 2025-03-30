@@ -19,8 +19,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/icon.png
-flutter_icons:
+    - assets/maskable_icon.png
+flutter_launcher_icons:
   android: true
   ios: false
-  image_path: "assets/icon.png"
+  image_path: "assets/maskable_icon.png"
