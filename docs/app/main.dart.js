@@ -35262,7 +35262,7 @@ s.aH()},
 Ig(){var s=this.x
 if(s!=null){if(s>=38)return B.hM
 if(s>36.5)return B.l3}return null},
-N(a){var s,r,q,p=this,o=null,n=t.E,m=A.c([A.agB(o,o,B.C7,o,o,p.ga6p(),o,o,"Info")],n),l=A.x6(A.c([new A.va(A.avV(o,o,new A.tq("assets/icon.png",o,o)),28,o),B.jw,B.Q9],n),B.b0,B.al,B.be),k=A.VV(!0,o,!0,!0,o,o,!1),j=A.agl(A.mc(A.c([A.y7(p.d,B.Cu,B.jD,new A.a86(p),!1),B.em,A.y7(p.f,B.Cw,B.jD,new A.a87(p),!1),B.em,A.y7(p.e,B.Ct,B.jD,new A.a88(p),!1)],n),B.ba,B.al,B.be)),i=A.oW(o,B.O,B.Ge,o,180,B.lp,o,1),h=p.r
+N(a){var s,r,q,p=this,o=null,n=t.E,m=A.c([A.agB(o,o,B.C7,o,o,p.ga6p(),o,o,"Info")],n),l=A.x6(A.c([new A.va(A.avV(o,o,new A.tq("assets/icon.png",o,o)),28,o),B.jw,B.Qa],n),B.b0,B.al,B.be),k=A.VV(!0,o,!0,!0,o,o,!1),j=A.agl(A.mc(A.c([A.y7(p.d,B.Cu,B.jD,new A.a86(p),!1),B.em,A.y7(p.f,B.Cw,B.jD,new A.a87(p),!1),B.em,A.y7(p.e,B.Ct,B.jD,new A.a88(p),!1)],n),B.ba,B.al,B.be)),i=A.oW(o,B.O,B.Ge,o,180,B.lp,o,1),h=p.r
 h=h!=null?B.c.a4(h,2):""
 s=$.af()
 h=A.y7(new A.jv(new A.bR(h,B.er,B.aU),s),B.Cs,o,o,!0)
@@ -35272,8 +35272,8 @@ r=A.y7(new A.jv(new A.bR(r,B.er,B.aU),s),B.Cv,o,o,!0)
 q=p.x
 if(q!=null)q=q>=38?"\u26a0\ufe0f "+B.c.a4(q,2):B.c.a4(q,2)
 else q=""
-j=A.x6(A.c([j,i,A.agl(A.mc(A.c([h,B.em,r,B.em,A.y7(new A.jv(new A.bR(q,B.er,B.aU),s),A.akC(o,B.d0,o,o,o,o,o,o,!0,o,o,o,o,o,o,p.Ig(),p.Ig()!=null,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"\ud83d\udcca MCHC (g/dl)",!0,o,o,o,o,o,o,o,o,o,o,o,o,o),o,o,!0),B.em,A.mc(A.c([B.Qe,B.wY,A.x6(A.c([A.oW(o,B.O,B.l3,o,16,o,o,16),B.jw,B.Qh],n),B.b0,B.al,B.be),B.wY,A.x6(A.c([A.oW(o,B.O,B.hM,o,16,o,o,16),B.jw,B.Qb],n),B.b0,B.al,B.be)],n),B.ba,B.al,B.be)],n),B.ba,B.al,B.be))],n),B.ba,B.al,B.be)
-i=A.x6(A.c([A.aka(B.Qa,p.gXx(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o)),B.Kz,A.aka(B.Qd,p.ga5c(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o))],n),B.b0,B.iV,B.be)
+j=A.x6(A.c([j,i,A.agl(A.mc(A.c([h,B.em,r,B.em,A.y7(new A.jv(new A.bR(q,B.er,B.aU),s),A.akC(o,B.d0,o,o,o,o,o,o,!0,o,o,o,o,o,o,p.Ig(),p.Ig()!=null,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"\ud83d\udcca MCHC (g/dl)",!0,o,o,o,o,o,o,o,o,o,o,o,o,o),o,o,!0),B.em,A.mc(A.c([B.Qf,B.wY,A.x6(A.c([A.oW(o,B.O,B.l3,o,16,o,o,16),B.jw,B.Qh],n),B.b0,B.al,B.be),B.wY,A.x6(A.c([A.oW(o,B.O,B.hM,o,16,o,o,16),B.jw,B.Qc],n),B.b0,B.al,B.be)],n),B.ba,B.al,B.be)],n),B.ba,B.al,B.be))],n),B.ba,B.al,B.be)
+i=A.x6(A.c([A.aka(B.Qb,p.gXx(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o)),B.Kz,A.aka(B.Qe,p.ga5c(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o))],n),B.b0,B.iV,B.be)
 h=A.afR(B.hK)
 s=A.oA(8)
 s=A.oW(A.H9(o,o,o,B.bt,o,o,!0,o,B.Ly,B.ap,o,o,B.a4,B.ar),B.O,o,new A.dG(B.hU,o,h,s,o,o,B.aZ),o,o,B.lo,1/0)
@@ -35281,7 +35281,7 @@ h=A.afR(B.hK)
 r=A.oA(8)
 return new A.x7(new A.tn(l,m,new A.MW(o,o,1/0,56),o),new A.Fs(k,new A.a89(p),new A.cS(B.Bq,A.mc(A.c([j,B.h6,i,A.agl(A.awr(A.mc(A.c([B.h6,B.Q8,B.wZ,s,B.h6,B.Q7,B.wZ,A.oW(A.H9(o,o,o,B.bt,o,o,!0,o,B.Lu,B.ap,o,o,B.a4,B.ar),B.O,o,new A.dG(B.hU,o,h,r,o,o,B.aZ),o,o,B.lo,1/0),B.h6],n),B.ba,B.al,B.be)))],n),B.b0,B.al,B.be),o),o),o)}}
 A.a85.prototype={
-$1(a){return new A.os(B.Qc,B.Qf,A.c([A.ahi(B.Qg,new A.a84(a),null)],t.E),null)},
+$1(a){return new A.os(B.Qd,B.Q9,A.c([A.ahi(B.Qg,new A.a84(a),null)],t.E),null)},
 $S:236}
 A.a84.prototype={
 $0(){return A.we(this.a,!1).ej()},
@@ -77641,13 +77641,13 @@ B.Q6=new A.cU(B.NX,B.N0,B.NY,B.Ow,B.MF,B.MM,B.Nk,B.Oj,B.Ny,B.P1,B.M9,B.Mu,B.OY,B
 B.xn=new A.k(!0,null,null,null,null,null,16,B.cO,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Q7=new A.dZ("Strategien zur Identifikation der Ursache:\ud83d\udd0d",null,B.xn,null,null,null,null,null,null)
 B.Q8=new A.dZ("m\xf6gliche Ursachen:\ud83d\udcf0",null,B.xn,null,null,null,null,null,null)
-B.Q9=new A.dZ("CBC-Calc",null,null,null,null,null,null,null,null)
-B.Qa=new A.dZ("\ud83e\uddee Berechnen",null,null,null,null,null,null,null,null)
-B.Qb=new A.dZ("MCHC \u2265 38",null,null,null,null,null,null,null,null)
-B.Qc=new A.dZ("\u2139\ufe0f \xdcber CBC-Calc",null,null,null,null,null,null,null,null)
-B.Qd=new A.dZ("\ud83d\udd04 Zur\xfccksetzen",null,null,null,null,null,null,null,null)
-B.Qe=new A.dZ("Legende MCHC:",null,B.b5,null,null,null,null,null,null)
-B.Qf=new A.dZ("Diese App dient der unterst\xfctzenden Berechnung h\xe4matologischer Parameter bei schwierigen Proben.\n\n\u26a0\ufe0f Disclaimer: Kein Medizinprodukt! Kein Ersatz f\xfcr Diagnose, Labor oder Fachmeinung. \u26a0\ufe0f\n\nVersion: 1.0.1\nGitHub: github.com/Sierra-Bravo-ger/CBC-Calc\nEntwickler: Bride, Sebastian",null,null,B.ap,null,null,null,null,null)
+B.Q9=new A.dZ("Diese App dient der unterst\xfctzenden Berechnung h\xe4matologischer Parameter bei schwierigen Proben.\n\n\u26a0\ufe0f Disclaimer: Kein Medizinprodukt! Kein Ersatz f\xfcr Diagnose, Labor oder Fachmeinung. \u26a0\ufe0f\n\n\ud83d\udd10 Diese App verarbeitet eingegebene Werte ausschlie\xdflich lokal auf dem Ger\xe4t. \nEs werden keine Daten an Dritte weitergegeben oder gespeichert.\nEs werden keine personenbezogenen Daten erfasst.\ud83d\udd10\nVersion: 1.0.2\nGitHub: github.com/Sierra-Bravo-ger/CBC-Calc\nEntwickler: Bride, Sebastian",null,null,B.ap,null,null,null,null,null)
+B.Qa=new A.dZ("CBC-Calc",null,null,null,null,null,null,null,null)
+B.Qb=new A.dZ("\ud83e\uddee Berechnen",null,null,null,null,null,null,null,null)
+B.Qc=new A.dZ("MCHC \u2265 38",null,null,null,null,null,null,null,null)
+B.Qd=new A.dZ("\u2139\ufe0f \xdcber CBC-Calc",null,null,null,null,null,null,null,null)
+B.Qe=new A.dZ("\ud83d\udd04 Zur\xfccksetzen",null,null,null,null,null,null,null,null)
+B.Qf=new A.dZ("Legende MCHC:",null,B.b5,null,null,null,null,null,null)
 B.Qg=new A.dZ("Schlie\xdfen",null,null,null,null,null,null,null,null)
 B.Qh=new A.dZ("MCHC > 36,5",null,null,null,null,null,null,null,null)
 B.Th=new A.a66(0,"system")
