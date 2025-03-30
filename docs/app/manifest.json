@@ -1,11 +1,11 @@
 {
-    "name": "ery_indices",
-    "short_name": "ery_indices",
+    "name": "CBC-Calc",
+    "short_name": "CBCcalc",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Simple Calculator App for use in a clinical Hematology Lab to quickly Re-Calculate MCHC and other Erythrocyte-Indices in challenging Samples ",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
