@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-/*************  ✨ Codeium Command 🌟  *************/
-/// The main entrypoint for the application.
-///
-/// This function is called when the application is started, and it sets up
-/// the application's UI and starts the application.
+  ///*************  ✨ Codeium Command ⭐  *************/
+  /// The main entrypoint for the application.
+  ///
+  /// This function is called when the application is started, and it sets up
+  /// the application's UI and starts the application.
+  ///******  4ea61c1b-c865-4361-afa1-3425c4050c67  *******/
 void main() {
   /// Run the application.
   ///
@@ -12,12 +13,24 @@ void main() {
   /// the application's UI and starts the application.
   runApp(const CBCCalcApp());
 }
-/// ****  a0070254-d8da-472c-8577-c55848bed9cb  ******
 
 class CBCCalcApp extends StatelessWidget {
   const CBCCalcApp({super.key});
 
   @override
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Builds the application's UI.
+  ///
+  /// This function is called when the application is started, and it sets up
+  /// the application's UI and starts the application.
+  ///
+  /// The application is a [MaterialApp] with a red color scheme and a light
+  /// theme. The home page is a [CBCForm].
+  ///
+  /// The [MaterialApp] is the root widget of the application, and it contains
+  /// the application's UI. The [CBCForm] is the home page of the application,
+  /// and it contains the UI for the CBC calculator.
+///******  4ea61c1b-c865-4361-afa1-3425c4050c67  *******/
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CBC-Calc',
@@ -39,6 +52,26 @@ class CBCForm extends StatefulWidget {
 }
 
 class _CBCFormState extends State<CBCForm> {
+/*************  ✨ Codeium Command ⭐  *************/
+  /// Shows an information dialog with the app's details and a disclaimer.
+  ///
+  /// The dialog contains a title, some text with information about the app,
+  /// and an "OK" button.
+  ///
+  /// The information text provides a disclaimer that the app is not a medical
+  /// device and should not be used as a substitute for a medical diagnosis,
+  /// laboratory test or medical advice.
+  ///
+  /// The dialog is shown when the user presses the "About" button in the app
+  /// bar.
+/******  8e920fef-2d30-40e4-adc6-1a8c161f863d  *******/
+  ///
+  /// The dialog is built using the [AlertDialog] widget, which provides a
+  /// standard dialog layout with a title, content and actions.
+  ///
+  /// The dialog is shown using the [showDialog] function, which takes the
+  /// context and the builder function as parameters. The builder function
+  /// returns the [AlertDialog] widget to be displayed.
 void _showInfoDialog() {
   showDialog(
     context: context,
@@ -70,6 +103,20 @@ void _showInfoDialog() {
   double? mch;
   double? mchc;
 
+///*************  ✨ Codeium Command ⭐  *************///
+  /// Calculates the mean corpuscular volume (MCV), mean corpuscular hemoglobin
+  /// (MCH) and mean corpuscular hemoglobin concentration (MCHC) based on the
+  /// input values for red blood cells (RBCs), hemoglobin (Hb) and hematocrit
+  /// (Hct).
+  ///
+  /// The calculations are performed as follows:
+  ///
+  /// MCV = (Hct * 10) / RBC
+  /// MCH = (Hb * 10) / RBC
+  /// MCHC = (Hb * 100) / Hct
+  ///
+  /// The results are stored in the state variables [mcv], [mch] and [mchc].
+///******  575e28ac-bf87-4a5c-9c88-6080ee12674a  *******///
   void _calculate() {
     final rbc = double.tryParse(_rbcController.text.replaceAll(',', '.'));
     final hkt = double.tryParse(_hktController.text.replaceAll(',', '.'));
@@ -84,6 +131,11 @@ void _showInfoDialog() {
     }
   }
 
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Resets all input fields and state variables to their initial state.
+  ///
+  /// This method is called when the user clicks the "Zurücksetzen" button.
+///******  b80c3f3a-aedd-47a3-b062-922bee5452a6  *******/
   void _reset() {
     _rbcController.clear();
     _hktController.clear();
@@ -96,6 +148,15 @@ void _showInfoDialog() {
   }
 
   @override
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Releases the resources used by the [_CBCFormState].
+  ///
+  /// This method is called when the [StatefulWidget] is removed from the
+  /// widget tree.
+  ///
+  /// It disposes of the [TextEditingController]s used by the input fields,
+  /// and then calls [State.dispose].
+///******  c9bece9b-25f2-4939-8267-1eda2da0a2e0  *******/
   void dispose() {
     _rbcController.dispose();
     _hktController.dispose();
@@ -103,6 +164,18 @@ void _showInfoDialog() {
     super.dispose();
   }
 
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Returns a color to highlight the MCHC value in the result box based on
+  /// the value of [mchc].
+  ///
+  /// If [mchc] is null, returns null. Otherwise, returns a color based on the
+  /// value of [mchc]:
+  ///
+  /// - `Colors.red.shade100` if [mchc] is 38 or greater.
+  /// - `Colors.orange.shade100` if [mchc] is greater than 36.5 but less than
+  ///   38.
+  /// - null otherwise.
+//******  1d6acafb-007a-4946-ac2f-b38be6f6180f  *******/
   Color? _getHighlightColor() {
     if (mchc != null) {
       if (mchc! >= 38) return Colors.red.shade100;
@@ -111,6 +184,17 @@ void _showInfoDialog() {
     return null;
   }
 
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Returns a legend explaining the colors used to highlight the MCHC value
+  /// in the result box.
+  ///
+  /// The legend consists of a column with two rows. The first row shows a
+  /// square with `Colors.orange.shade100` color and the text 'MCHC > 36,5'.
+  /// The second row shows a square with `Colors.red.shade100` color and the
+  /// text 'MCHC ≥ 38'.
+  ///
+  /// The legend is used in the information box in the result page.
+///******  3beb74b4-9c67-408e-90f4-55a6e68d3318  *******/
   Widget _buildLegend() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,6 +216,22 @@ void _showInfoDialog() {
     );
   }
 
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Builds the information box that is displayed below the result box.
+  ///
+  /// The box contains a list of potential causes for a high MCHC value and
+  /// a description of strategies for identifying the cause.
+  ///
+  /// It is displayed in the result page.
+///******  8b10cd66-f6d9-4354-9066-8107cce4fd91  *******/
+  ///
+  /// The box is built using a [Column] widget with a [SingleChildScrollView]
+  /// to allow scrolling if the content is too long to fit on the screen.
+  /// The box contains two sections: "mögliche Ursachen" and "Strategien zur
+  /// Identifikation der Ursache". Each section contains a list of items with
+  /// explanations.
+  /// The items are displayed using a [RichText] widget with [TextSpan]s to
+  /// apply different styles to the text.
 Widget _buildInfoBox() {
   return Expanded(
     child: SingleChildScrollView(
@@ -232,6 +332,29 @@ Widget _buildInfoBox() {
 }
 
 @override
+///*************  ✨ Codeium Command ⭐  *************/
+  /// Builds the user interface of the application.
+  ///
+  /// This function is called when the application is started, and it sets up
+  /// the application's UI and starts the application.
+  ///
+  /// The application is a [MaterialApp] with a red color scheme and a light
+  /// theme. The home page is a [Scaffold] with an [AppBar] and a [Column]
+  /// containing the input fields, the result fields, and the buttons.
+  ///
+  /// The input fields are [TextField]s with [TextEditingController]s, which
+  /// are used to update the values of the input fields when the user enters
+  /// text. The result fields are also [TextField]s with [TextEditingController]s,
+  /// but they are read-only and are updated when the user presses the "Berechnen"
+  /// button. The buttons are [ElevatedButton]s with an [onPressed] callback that
+  /// is called when the button is pressed.
+  ///
+  /// The [KeyboardListener] is used to detect when the user presses the Enter
+  /// key, which triggers the "Berechnen" button's [onPressed] callback.
+  ///
+  /// The [Padding] is used to add a margin around the [Column] to prevent the
+  /// input fields and buttons from being too close to the edge of the screen.
+///******  517574e1-d477-40c1-85b0-274828756e7a  *******/
 Widget build(BuildContext context) {
   return Scaffold(
     appBar: AppBar(
