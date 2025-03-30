@@ -67,7 +67,10 @@ void _showInfoDialog() {
       content: const Text(
         'Diese App dient der unterstützenden Berechnung hämatologischer Parameter bei schwierigen Proben.\n\n'
         '⚠️ Disclaimer: Kein Medizinprodukt! Kein Ersatz für Diagnose, Labor oder Fachmeinung. ⚠️\n\n'
-        'Version: 1.0.1\n'
+        '🔐 Diese App verarbeitet eingegebene Werte ausschließlich lokal auf dem Gerät. \n'
+        'Es werden keine Daten an Dritte weitergegeben oder gespeichert.\n'
+        'Es werden keine personenbezogenen Daten erfasst.🔐\n'
+        'Version: 1.0.2\n'
         'GitHub: github.com/Sierra-Bravo-ger/CBC-Calc\n'
         'Entwickler: Bride, Sebastian',
         textAlign: TextAlign.start,
