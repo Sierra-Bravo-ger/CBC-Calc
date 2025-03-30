@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 void main() {
   runApp(const CBCCalcApp());
 }
@@ -222,28 +223,34 @@ Widget _buildInfoBox() {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-         actions: [
-    IconButton(
-      icon: const Icon(Icons.info_outline),
-      tooltip: 'Info',
-      onPressed: _showInfoDialog,
-    ),
-  ],
-        title: Row(  
-          children: [
-            Image.asset(
-              'assets/icon.png',
-              height: 28,
-            ),
-            const SizedBox(width: 8),
-            const Text('CBC-Calc'),
-            
-          ],
+  return Scaffold(
+    appBar: AppBar(
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.info_outline),
+          tooltip: 'Info',
+          onPressed: _showInfoDialog,
         ),
+      ],
+      title: Row(
+        children: [
+          Image.asset(
+            'assets/icon.png',
+            height: 28,
+          ),
+          const SizedBox(width: 8),
+          const Text('CBC-Calc'),
+        ],
       ),
-      body: Padding(
+    ),
+    body: KeyboardListener(
+      focusNode: FocusNode(), // Erforderlich für RawKeyboardListener
+      onKeyEvent: (KeyEvent event) {
+        if (event.runtimeType == KeyDownEvent && event.logicalKey == LogicalKeyboardKey.enter) {
+          _calculate(); // Berechnung auslösen, wenn Enter gedrückt wird
+        }
+      },
+      child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
@@ -319,8 +326,8 @@ Widget _buildInfoBox() {
                         readOnly: true,
                         controller: TextEditingController(
                           text: mchc != null
-                                ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(2)}' : mchc!.toStringAsFixed(2))
-                                : '',
+                              ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(2)}' : mchc!.toStringAsFixed(2))
+                              : '',
                         ),
                         decoration: InputDecoration(
                           labelText: '📊 MCHC (g/dl)',
@@ -357,6 +364,7 @@ Widget _buildInfoBox() {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }
