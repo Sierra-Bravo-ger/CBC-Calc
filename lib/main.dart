@@ -221,8 +221,8 @@ Widget _buildInfoBox() {
   );
 }
 
-  @override
-  Widget build(BuildContext context) {
+@override
+Widget build(BuildContext context) {
   return Scaffold(
     appBar: AppBar(
       actions: [
@@ -244,9 +244,9 @@ Widget _buildInfoBox() {
       ),
     ),
     body: KeyboardListener(
-      focusNode: FocusNode(), // Erforderlich für RawKeyboardListener
+      focusNode: FocusNode(), // FocusNode für den KeyboardListener
       onKeyEvent: (KeyEvent event) {
-        if (event.runtimeType == KeyDownEvent && event.logicalKey == LogicalKeyboardKey.enter) {
+        if (event is KeyDownEvent && event.logicalKey == LogicalKeyboardKey.enter) {
           _calculate(); // Berechnung auslösen, wenn Enter gedrückt wird
         }
       },
@@ -268,6 +268,7 @@ Widget _buildInfoBox() {
                           labelText: '🩸 RBC (Mio/µl)',
                           border: OutlineInputBorder(),
                         ),
+                        onSubmitted: (_) => _calculate(), // Berechnung bei Enter
                       ),
                       const SizedBox(height: 12),
                       TextField(
@@ -277,6 +278,7 @@ Widget _buildInfoBox() {
                           labelText: '💉 HB (g/dl)',
                           border: OutlineInputBorder(),
                         ),
+                        onSubmitted: (_) => _calculate(), // Berechnung bei Enter
                       ),
                       const SizedBox(height: 12),
                       TextField(
@@ -286,6 +288,7 @@ Widget _buildInfoBox() {
                           labelText: '🧪 HKT (%)',
                           border: OutlineInputBorder(),
                         ),
+                        onSubmitted: (_) => _calculate(), // Berechnung bei Enter
                       ),
                     ],
                   ),
@@ -368,3 +371,4 @@ Widget _buildInfoBox() {
   );
 }
 }
+// This is a simple Flutter app that calculates and displays hematological parameters based on user input.
