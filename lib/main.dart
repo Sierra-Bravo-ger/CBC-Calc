@@ -52,19 +52,6 @@ class CBCForm extends StatefulWidget {
 }
 
 class _CBCFormState extends State<CBCForm> {
-/*************  ✨ Codeium Command ⭐  *************/
-  /// Shows an information dialog with the app's details and a disclaimer.
-  ///
-  /// The dialog contains a title, some text with information about the app,
-  /// and an "OK" button.
-  ///
-  /// The information text provides a disclaimer that the app is not a medical
-  /// device and should not be used as a substitute for a medical diagnosis,
-  /// laboratory test or medical advice.
-  ///
-  /// The dialog is shown when the user presses the "About" button in the app
-  /// bar.
-/******  8e920fef-2d30-40e4-adc6-1a8c161f863d  *******/
   ///
   /// The dialog is built using the [AlertDialog] widget, which provides a
   /// standard dialog layout with a title, content and actions.

@@ -8,6 +8,14 @@
     "description": "Simple Calculator App for use in a clinical Hematology Lab to quickly Re-Calculate MCHC and other Erythrocyte-Indices in challenging Samples ",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "screenshots": [
+        {
+    "src": "screenshots/desktop_screenshot.png",
+    "type": "image/png",
+    "sizes": "1920x1080",
+    "form_factor": "wide"
+     }
+    ],
     "icons": [
         {
             "src": "icons/Icon-192.png",
