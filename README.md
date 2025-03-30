@@ -8,6 +8,10 @@ Allows for quick recalculation in challenging Samples.
 
 Below The Calculator is a German Text about possible causes and strategies to correct the MCHC.
 
+Download-Portal @ https://cbc.madmoench.de
+Web Version @ https://cbc.madmoench.de/app
+hosted on Github Pages
+
 ##
 
 ![grafik](https://github.com/user-attachments/assets/0530aa2a-37ec-4e88-823b-b0e750dccb66)
