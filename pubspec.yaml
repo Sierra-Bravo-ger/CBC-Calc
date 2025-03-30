@@ -24,3 +24,5 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: "assets/maskable_icon.png"
+  adaptive_icon_background: "#39A298"
+  adaptive_icon_foreground: "assets/maskable_icon.png"
