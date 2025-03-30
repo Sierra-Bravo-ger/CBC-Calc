@@ -28,6 +28,29 @@ class CBCForm extends StatefulWidget {
 }
 
 class _CBCFormState extends State<CBCForm> {
+void _showInfoDialog() {
+  showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text('ℹ️ Über CBC-Calc'),
+      content: const Text(
+        'Diese App dient der unterstützenden Berechnung hämatologischer Parameter bei schwierigen Proben.\n\n'
+        '⚠️ Disclaimer: Kein Medizinprodukt! Kein Ersatz für Diagnose, Labor oder Fachmeinung. ⚠️\n\n'
+        'Version: 1.0.1\n'
+        'GitHub: github.com/Sierra-Bravo-ger/CBC-Calc\n'
+        'Entwickler: Bride, Sebastian',
+        textAlign: TextAlign.start,
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: const Text('Schließen'),
+        ),
+      ],
+    ),
+  );
+}
+
   final _rbcController = TextEditingController();
   final _hktController = TextEditingController();
   final _hbController = TextEditingController();
@@ -201,7 +224,14 @@ Widget _buildInfoBox() {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
+         actions: [
+    IconButton(
+      icon: const Icon(Icons.info_outline),
+      tooltip: 'Info',
+      onPressed: _showInfoDialog,
+    ),
+  ],
+        title: Row(  
           children: [
             Image.asset(
               'assets/icon.png',
@@ -209,6 +239,7 @@ Widget _buildInfoBox() {
             ),
             const SizedBox(width: 8),
             const Text('CBC-Calc'),
+            
           ],
         ),
       ),

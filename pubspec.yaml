@@ -1,7 +1,7 @@
 name: cbc_calc
 description: "Simple Calculator App for use in a clinical Hematology Lab to quickly Re-Calculate MCHC and other Erythrocyte-Indices in Samples where MCHC > 36,5 "
 publish_to: 'none'
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ^3.7.2
