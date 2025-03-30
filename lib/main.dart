@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+/*************  ✨ Codeium Command 🌟  *************/
+/// The main entrypoint for the application.
+///
+/// This function is called when the application is started, and it sets up
+/// the application's UI and starts the application.
 void main() {
+  /// Run the application.
+  ///
+  /// This function is called when the application is started, and it sets up
+  /// the application's UI and starts the application.
   runApp(const CBCCalcApp());
 }
+/// ****  a0070254-d8da-472c-8577-c55848bed9cb  ******
 
 class CBCCalcApp extends StatelessWidget {
   const CBCCalcApp({super.key});
