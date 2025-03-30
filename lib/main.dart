@@ -428,6 +428,7 @@ Widget build(BuildContext context) {
                     children: [
                       TextField(
                         readOnly: true,
+                        focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
                           text: mcv != null ? mcv!.toStringAsFixed(2) : '',
                         ),
@@ -439,6 +440,7 @@ Widget build(BuildContext context) {
                       const SizedBox(height: 12),
                       TextField(
                         readOnly: true,
+                        focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
                           text: mch != null ? mch!.toStringAsFixed(2) : '',
                         ),
@@ -450,6 +452,7 @@ Widget build(BuildContext context) {
                       const SizedBox(height: 12),
                       TextField(
                         readOnly: true,
+                        focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
                           text: mchc != null
                               ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(2)}' : mchc!.toStringAsFixed(2))
