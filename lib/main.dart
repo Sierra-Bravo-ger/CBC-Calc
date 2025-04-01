@@ -430,7 +430,7 @@ Widget build(BuildContext context) {
                         readOnly: true,
                         focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
-                          text: mcv != null ? mcv!.toStringAsFixed(2) : '',
+                          text: mcv != null ? mcv!.toStringAsFixed(0) : '',
                         ),
                         decoration: const InputDecoration(
                           labelText: '↔ MCV (fl)',
@@ -442,7 +442,7 @@ Widget build(BuildContext context) {
                         readOnly: true,
                         focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
-                          text: mch != null ? mch!.toStringAsFixed(2) : '',
+                          text: mch != null ? mch!.toStringAsFixed(0) : '',
                         ),
                         decoration: const InputDecoration(
                           labelText: '⚖ MCH (pg)',
@@ -497,4 +497,3 @@ Widget build(BuildContext context) {
   );
 }
 }
-// This is a simple Flutter app that calculates and displays hematological parameters based on user input.
