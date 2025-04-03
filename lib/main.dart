@@ -358,7 +358,7 @@ Widget build(BuildContext context) {
       title: Row(
         children: [
           Image.asset(
-            'assets/icon.png',
+            'assets/icon_round_edges.png',
             height: 28,
           ),
           const SizedBox(width: 8),
@@ -430,7 +430,7 @@ Widget build(BuildContext context) {
                         readOnly: true,
                         focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
-                          text: mcv != null ? mcv!.toStringAsFixed(0) : '',
+                          text: mcv != null ? mcv!.toStringAsFixed(1) : '',
                         ),
                         decoration: const InputDecoration(
                           labelText: '↔ MCV (fl)',
@@ -442,7 +442,7 @@ Widget build(BuildContext context) {
                         readOnly: true,
                         focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
-                          text: mch != null ? mch!.toStringAsFixed(0) : '',
+                          text: mch != null ? mch!.toStringAsFixed(1) : '',
                         ),
                         decoration: const InputDecoration(
                           labelText: '⚖ MCH (pg)',
@@ -455,7 +455,7 @@ Widget build(BuildContext context) {
                         focusNode: FocusNode(skipTraversal: true), // FocusNode für den TextField
                         controller: TextEditingController(
                           text: mchc != null
-                              ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(2)}' : mchc!.toStringAsFixed(2))
+                              ? (mchc! >= 38 ? '⚠️ ${mchc!.toStringAsFixed(1)}' : mchc!.toStringAsFixed(1))
                               : '',
                         ),
                         decoration: InputDecoration(

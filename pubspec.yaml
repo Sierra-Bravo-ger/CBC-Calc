@@ -20,6 +20,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/maskable_icon.png
+    - assets/icon_round_edges.png   
 flutter_launcher_icons:
   android: true
   ios: false

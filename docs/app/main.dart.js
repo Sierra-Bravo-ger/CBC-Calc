@@ -35263,17 +35263,17 @@ s.aH()},
 Ih(){var s=this.x
 if(s!=null){if(s>=38)return B.hM
 if(s>36.5)return B.l3}return null},
-N(a){var s,r,q,p=this,o=null,n=t.E,m=A.c([A.agB(o,o,B.C7,o,o,p.ga6p(),o,o,"Info")],n),l=A.x7(A.c([new A.vb(A.avV(o,o,new A.tr("assets/icon.png",o,o)),28,o),B.jw,B.Qa],n),B.b0,B.al,B.be),k=A.pc(!0,o,!0,!0,o,o,!1),j=A.agl(A.mc(A.c([A.y8(p.d,B.Cu,o,B.jD,new A.a86(p),!1),B.em,A.y8(p.f,B.Cw,o,B.jD,new A.a87(p),!1),B.em,A.y8(p.e,B.Ct,o,B.jD,new A.a88(p),!1)],n),B.ba,B.al,B.be)),i=A.oW(o,B.O,B.Ge,o,180,B.lp,o,1),h=A.pc(!0,o,!0,!0,o,o,!0),g=p.r
-g=g!=null?B.c.a4(g,0):""
+N(a){var s,r,q,p=this,o=null,n=t.E,m=A.c([A.agB(o,o,B.C7,o,o,p.ga6p(),o,o,"Info")],n),l=A.x7(A.c([new A.vb(A.avV(o,o,new A.tr("assets/icon_round_edges.png",o,o)),28,o),B.jw,B.Qa],n),B.b0,B.al,B.be),k=A.pc(!0,o,!0,!0,o,o,!1),j=A.agl(A.mc(A.c([A.y8(p.d,B.Cu,o,B.jD,new A.a86(p),!1),B.em,A.y8(p.f,B.Cw,o,B.jD,new A.a87(p),!1),B.em,A.y8(p.e,B.Ct,o,B.jD,new A.a88(p),!1)],n),B.ba,B.al,B.be)),i=A.oW(o,B.O,B.Ge,o,180,B.lp,o,1),h=A.pc(!0,o,!0,!0,o,o,!0),g=p.r
+g=g!=null?B.c.a4(g,1):""
 s=$.af()
 h=A.y8(new A.jv(new A.bR(g,B.er,B.aU),s),B.Cs,h,o,o,!0)
 g=A.pc(!0,o,!0,!0,o,o,!0)
 r=p.w
-r=r!=null?B.c.a4(r,0):""
+r=r!=null?B.c.a4(r,1):""
 g=A.y8(new A.jv(new A.bR(r,B.er,B.aU),s),B.Cv,g,o,o,!0)
 r=A.pc(!0,o,!0,!0,o,o,!0)
 q=p.x
-if(q!=null)q=q>=38?"\u26a0\ufe0f "+B.c.a4(q,2):B.c.a4(q,2)
+if(q!=null)q=q>=38?"\u26a0\ufe0f "+B.c.a4(q,1):B.c.a4(q,1)
 else q=""
 j=A.x7(A.c([j,i,A.agl(A.mc(A.c([h,B.em,g,B.em,A.y8(new A.jv(new A.bR(q,B.er,B.aU),s),A.akC(o,B.d0,o,o,o,o,o,o,!0,o,o,o,o,o,o,p.Ih(),p.Ih()!=null,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,"\ud83d\udcca MCHC (g/dl)",!0,o,o,o,o,o,o,o,o,o,o,o,o,o),r,o,o,!0),B.em,A.mc(A.c([B.Qf,B.wY,A.x7(A.c([A.oW(o,B.O,B.l3,o,16,o,o,16),B.jw,B.Qh],n),B.b0,B.al,B.be),B.wY,A.x7(A.c([A.oW(o,B.O,B.hM,o,16,o,o,16),B.jw,B.Qc],n),B.b0,B.al,B.be)],n),B.ba,B.al,B.be)],n),B.ba,B.al,B.be))],n),B.ba,B.al,B.be)
 i=A.x7(A.c([A.aka(B.Qb,p.gXx(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o)),B.Kz,A.aka(B.Qe,p.ga5c(),A.akb(o,o,o,o,o,o,o,o,o,o,o,B.wX,o,o,o,o,o,o,o))],n),B.b0,B.iV,B.be)
