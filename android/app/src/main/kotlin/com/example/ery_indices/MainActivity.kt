@@ -1,4 +1,4 @@
-package com.example.ery_indices
+package com.example.cbc_calc
 
 import io.flutter.embedding.android.FlutterActivity
 

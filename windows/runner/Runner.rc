@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "ery_indices" "\0"
+            VALUE "FileDescription", "CBC-Calc" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "ery_indices" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "ery_indices.exe" "\0"
-            VALUE "ProductName", "ery_indices" "\0"
+            VALUE "InternalName", "CBC-Calc" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "CBC-Calc.exe" "\0"
+            VALUE "ProductName", "CBC-Calc" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

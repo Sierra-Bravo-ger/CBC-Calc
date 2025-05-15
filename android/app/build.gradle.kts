@@ -6,8 +6,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ery_indices"
-    compileSdk = flutter.compileSdkVersion
+    namespace = "com.example.cbc_calc"
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
